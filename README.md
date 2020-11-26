@@ -6,4 +6,4 @@ This is without many features to come, multiple and custom sourcing, an Original
 
 this is just a beta, don't expect if to work without going through the source code and tweaking some things. I made a general "installer"
 ### TO INSTALL
-sudo git clone https://github.com/MBHudson/SP-Proxy.git | cd SP-Proxy | sudo chmod -R 777 SP-Proxy | ./installer | ./spProxy
+sudo git clone https://github.com/MBHudson/SP-Proxy.git | cd SP-Proxy | sudo chmod -R 777 SP-Proxy/ | ./installer | ./spProxy
