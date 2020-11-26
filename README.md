@@ -4,10 +4,15 @@ This is without many features to come, multiple and custom sourcing, an Original
 
 ### Requirements:
 Proxychains4 (Proxychains-ng)
+
 Python2.7+
+
 cURL
+
 Sed
+
 Git
+
 Kali OS 2020+
 
 ☆This script will currently download socks4/5 and HTTP proxy lists, format and validate/saving the working proxy servers to use in your proxychains.☆
