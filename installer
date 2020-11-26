@@ -1,0 +1,20 @@
+#!/bin/bash
+# Written by: M.B. Hudson (2020)
+echo "Best to grant your terminal with a no password sudo"
+pause 5
+sudo install kali-grant-root
+sudo dpkg-reconfigure kali-grant-root
+cd
+sudo chmod -R 777 SP-Proxy/
+cd /home/binbash/SP-Proxy/
+clear
+echo "PLEASE ENTER THE USERNAME OF THE SESSION YOU ARE CURRENTLY LOGGED IN AS:" 
+echo " YOUR USERNAME IS PROBABLY:" "$USER" 
+echo "or" 
+whoami
+echo "whatever is USUALY before the @ sybol"
+echo "...that's to the left of your shell prompt."
+echo "Example: this_is_what_you_tyoe@kali-[~]"
+read varusername
+sudo sed -i 's+YOUR_USER_NAME+'$varusername'+' spProxy
+./spProxy

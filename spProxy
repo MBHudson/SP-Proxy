@@ -1,0 +1,36 @@
+#!/bin/bash
+# Written by: M.B. Hudson (2020)
+clear
+echo "DOWNLOADING SOCKS4 PROXY LIST..."
+curl -# https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks4.txt -o /home/YOUR_USER_NAME/SP-Proxy/Lists/socks4fresh.txt
+echo "Extracting in IP:PORT format..."
+grep -Po "(\d+\.){3}\d+:?(\d?){4}" "/home/YOUR_USER_NAME/SP-Proxy/Lists/socks4fresh.txt" > /home/YOUR_USER_NAME/SP-Proxy/Lists/socks4.extract.txt
+echo "DOWNLOADING SOCKS5 PROXY LIST..."
+curl -# https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt -o /home/YOUR_USER_NAME/SP-Proxy/Lists/socks5fresh.txt
+echo "Extracting in IP:PORT format..."
+grep -Po "(\d+\.){3}\d+:?(\d?){4}" "/home/YOUR_USER_NAME/SP-Proxy/Lists/socks5fresh.txt" > /home/YOUR_USER_NAME/SP-Proxy/Lists/socks5.extract.txt
+echo "DOWNLOADING HTTP PROXY LIST..."
+curl -# https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt -o /home/YOUR_USER_NAME/SP-Proxy/Lists/httpfresh.txt
+echo "Extracting in IP:PORT format..."
+grep -Po "(\d+\.){3}\d+:?(\d?){4}" "/home/YOUR_USER_NAME/SP-Proxy/Lists/httpfresh.txt" > /home/YOUR_USER_NAME/SP-Proxy/Lists/socks4.extract.txt
+pause 2
+clear
+echo "Validating Proxy Lists..."
+pause 2
+cd
+cd /home/YOUR_USER_NAME/SP-Proxy/
+cd /home/YOUR_USER_NAME/SP-Proxy/socker/
+clear
+echo "*************************************"
+echo      ENTER socks4, socks5 or http
+echo "*************************************"
+echo "Type the name of the fresh proxy list you would like to verify:"
+read varproxytype
+python2.7 socker.py /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.extract.txt /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.VERIFIED.txt 10 10
+cd
+sudo chmod -R 777 SP-Proxy/
+cd /home/YOUR_USER_NAME/SP-Proxy/
+cd /home/YOUR_USER_NAME/SP-Proxy/socker/
+sed -i 's/:/   /g' /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.VERIFIED.txt
+sed 's/^/'$varproxytype'   /' /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.VERIFIED.txt > /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.CHAINREADY.txt
+nano /home/YOUR_USER_NAME/SP-Proxy/Lists/$varproxytype.CHAINREADY.txt
