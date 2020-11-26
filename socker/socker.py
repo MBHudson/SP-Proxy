@@ -1,4 +1,3 @@
-#Developed by TheSpeedX
 import socket
 import Queue
 import threading
@@ -136,7 +135,6 @@ while flag:
 		Exit()
 	
 	if not (len(sys.argv) == 1 or len(sys.argv) == 5):
-	        print "This Script Was Created By SpeedX!!"
 	        print "Invalid Parameters used..."
 	        print "\n\nUsage:"
 		print "python2 socker.py <socks_file_list> <file_to_write> <threads> <timeout>"
@@ -147,9 +145,6 @@ while flag:
 		raw_input()
 		Exit()
 	if not (sys.argv[0] == "socker.py" or  sys.argv[0] == "socker"):
-	        print "This Script Was Created By SpeedX!!"
-	        print "Don't Be OVERSMART by changing script file name or its contents!!"
-	        print "Get Your Hands off you chessy ass !!!"
 	        print "\n\n\nPress Enter To Continue..."
 		raw_input()
 		Exit()
