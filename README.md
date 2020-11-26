@@ -20,6 +20,6 @@ Kali OS 2020+
 
 *If anyone wants to help out with a better name I'm all ears lol
 
-This is just a beta, don't expect if to work without going through the source code and tweaking some things. I made a general "installer."
+This is just a beta, don't expect it to work without going through the source code and tweaking some things. I made a general "installer."
 ### TO INSTALL: Copy and Paste the following into a terminal *Kali OS
 sudo git clone https://github.com/MBHudson/SP-Proxy.git | sudo chmod -R 777 SP-Proxy/ | cd PS-Proxy | ./installer | ./spProxy
