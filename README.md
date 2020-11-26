@@ -15,7 +15,7 @@ Git
 
 Kali OS 2020+
 
-☆This script will currently download socks4/5 and HTTP proxy lists, format and validate/saving the working proxy servers to use in your proxychains.☆
+☆This script will currently download socks4/5 and HTTP(S) proxy lists, format and validate/saving the working proxy servers to use in your proxychains.☆
 
 
 *If anyone wants to help out with a better name I'm all ears lol
