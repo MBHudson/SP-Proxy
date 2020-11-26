@@ -1,5 +1,5 @@
 # SP-Proxy
-### 🥇1st EVER Self-Propagating ProxyChains: Beta v0.1 Auto-Sourced ProxyChains, SOCK4/5 & HTTP(S) - Automated List Sourcing, Verification and Formatting. Gets Everything Ready For Your "proxychains4.conf" (located: /etc/proxychains4.conf) Kali OS*
+### 🥇Self-Propagating ProxyChains: Beta v0.1 Auto-Sourced ProxyChains, SOCK4/5 & HTTP(S) - Automated List Sourcing, Verification and Formatting. Gets Everything Ready For Your "proxychains4.conf" (located: /etc/proxychains4.conf) Kali OS*
 This is without many features to come, Multiple and Custom Sourcing, An Original UDP through TCP SOCK5 Method,  Original UDP through TOR and My Well Known "TOR_HOOK"; all precursors to my upcoming "Anonymous-Toolset."
 
 ### Requirements:
